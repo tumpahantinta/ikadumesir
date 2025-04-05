@@ -1,0 +1,349 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+#topbar {
+  background-color: #093422;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+}
+
+.top-contact,
+.sosmed {
+  list-style: none;
+  padding: 0;
+}
+
+#topbar li {
+  display: inline-block;
+}
+
+#topbar .top-contact a {
+  color: #fff;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+/* warna icon atas */
+#topbar li a i {
+  color: #4c9e77;
+  margin-right: 5px;
+}
+
+#topbar .sosmed li a {
+  padding: 0 5px;
+  color: #fff;
+}
+
+#topbar .sosmed li a i {
+  color: #fff;
+}
+
+/* css untuk header */
+
+header {
+  padding: 30px 0;
+}
+
+.brand {
+  display: flex;
+}
+
+.brand img {
+  margin-right: 20px;
+}
+
+.brand .brand-name h1 {
+  font-size: 25px;
+  color: #093422;
+  text-transform: uppercase;
+}
+
+.brand .brand-name h3 {
+  font-size: 18px;
+  font-family: Raleway, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+}
+
+.pembungkus-searchbox {
+  display: flex;
+  align-items: center;
+}
+
+.searchbox {
+  width: 100%;
+}
+
+.btn.btn-utama {
+  background-color: #093422;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn.btn-utama:hover {
+  background-color: #4c9e77;
+  transition: background-color 0.3s;
+}
+
+/* css untuk menu / navbar */
+.navbar {
+  padding: 0;
+  border-bottom: 5px solid #4c9e77;
+}
+
+.nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+.bg-hijau {
+  background-color: #093422; /* Warna hijau tua */
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  background-color: #4c9e77;
+  color: #fff;
+}
+
+/* warna kotak menu */
+.active {
+  background-color: #4c9e77;
+  color: #093422;
+}
+
+li.nav-item.active a {
+  color: #093422;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+/* Footer */
+#footer {
+  background-color: #093422;
+  color: white;
+  padding: 40px 0;
+}
+
+#footer .container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Menggunakan Flexbox agar 3 kolom sejajar */
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Semua kolom memiliki ukuran yang sama */
+.footer-col {
+  flex: 1;
+}
+
+/* Branding */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.brand h1 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Sosial Media */
+.footer-social {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.footer-social li a {
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-social li a:hover {
+  color: #4c9e77;
+}
+
+/* Kontak */
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-contact li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+  color: #4c9e77;
+  font-size: 16px;
+}
+
+.footer-contact a,
+.alamat a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover,
+.alamat a:hover {
+  color: #4c9e77;
+}
+
+/* Navigasi */
+.footer-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 8px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #4c9e77;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  background: #062d1a;
+  color: #fff;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  height: 40px; /* Sesuaikan tinggi kotak agar tulisan lebih pas di tengah */
+}
+
+/* artikel */
+#artikel {
+  padding: 50px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#artikel h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #093422;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  font-size: 18px;
+  color: #093422;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-utama {
+  display: inline-block;
+  background-color: #093422;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-utama:hover {
+  background-color: #4c9e77;
+}
