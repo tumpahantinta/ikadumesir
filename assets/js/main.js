@@ -51,4 +51,5 @@ $(document).ready(function () {
     ],
     navContainer: "#slider-tools-3",
   });
+  window.location.href = "/artikel"; // Arahkan tanpa ekstensi .html
 });

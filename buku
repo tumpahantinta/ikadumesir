@@ -196,6 +196,33 @@
       <!--.container-->
     </nav>
 
+      <!-- artikel -->
+      <section id="artikel">
+        <div class="container">
+          <h2>Artikel</h2>
+          <div class="row">
+            <!-- Artikel 1 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="assets/img/artikel 1.jpg" alt="Judul Artikel 1" />
+                <div class="card-body">
+                  <h3>
+                    Analisis Syakib Arslan: Mengapa Umat Islam Mundur dan Bangsa
+                    Lain Maju
+                  </h3>
+                  <p>
+                    Syakib Arslan, seorang intelektual dan pemikir Muslim
+                    terkemuka, dalam karyanya yang berjudul “Limadza Ta’akhkhara
+                    al-Muslimun wa Limadza Taqaddama Ghayruhum?” (“Mengapa Kaum
+                    Muslim Terbelakang dan Bangsa Lain Maju?”)
+                  </p>
+                  <a href="artikel1.html" class="btn btn-utama"
+                    >Baca Selengkapnya</a
+                  >
+                </div>
+              </div>
+            </div>
+
     <footer id="footer">
       <div class="container">
         <div class="footer-grid">
