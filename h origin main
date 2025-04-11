@@ -1,0 +1,162 @@
+[33mcommit 145743b451cf37e0eebb6b1dab5a37589636e446[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: a84c4dc 718d993
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Fri Apr 11 20:58:00 2025 +0200
+
+    Merge branch 'main' of https://github.com/tumpahantinta/ikadumesir
+
+[33mcommit a84c4dcd5e7805c7ad4ce73953f284c69e8a5f2d[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Fri Apr 11 20:56:33 2025 +0200
+
+    Remove Nginx configuration
+
+[33mcommit 718d9939c7dc834219130fe47970b9ce0e29e391[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Fri Apr 11 20:01:34 2025 +0200
+
+    Update nginx.conf and log files
+
+[33mcommit 0999191811353babe8b1283f98211949ceb59be8[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Fri Apr 11 19:48:33 2025 +0200
+
+    Update nginx.conf and logs
+
+[33mcommit 20413151794c318fff784207b747049722870ab1[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Fri Apr 11 19:38:04 2025 +0200
+
+    Menambahkan folder conf dan logs
+
+[33mcommit 149a04f65b010ff916f3ee9add8333d5003eea07[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Fri Apr 11 19:37:25 2025 +0200
+
+    Menambahkan folder conf dan logs
+
+[33mcommit 0ef779840a1e03ac1f6040a32cfa0e2c389c5f01[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Fri Apr 11 19:16:17 2025 +0200
+
+    update codingan nginx dan html
+
+[33mcommit 2b91515562c46d39138b7c654c05d2fb49f66e3f[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 21:34:13 2025 +0200
+
+    Menambahkan .gitignore untuk mengabaikan file .html
+
+[33mcommit 0519e1cffc3a16d09c067a323be7ef374960a977[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 21:33:07 2025 +0200
+
+    Menambahkan file-file baru
+
+[33mcommit 715963def35a951ffef6a4bc789483c16f9fcd1d[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 21:32:52 2025 +0200
+
+    Menghapus file index.html yang sudah tidak diperlukan
+
+[33mcommit b73c6c9b38d567568d973b9bd26ac213e0964109[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 21:13:21 2025 +0200
+
+    Hapus folder ikadumesir yang tidak diperlukan
+
+[33mcommit 0ab8239a4a8c4152f2a4bad49a2adebcea72ff59[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 20:56:39 2025 +0200
+
+    Pindahkan semua file HTML ke folder masing-masing
+
+[33mcommit 9070615288c252de997b9cf4de96b9df665f2005[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 20:33:39 2025 +0200
+
+    Remove embedded git repository
+
+[33mcommit 1c835f38b9604da362c4193a902e36f9c9b3eb9e[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 20:32:58 2025 +0200
+
+    Reorganize HTML files into folders
+
+[33mcommit 33f945b6b75f04350d8222c59e0ef07667719549[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 20:27:50 2025 +0200
+
+    Move HTML files to respective folders and rename them to index.html
+
+[33mcommit 88b7a50207413d00efcb1901a807c7d5ec662977[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 20:23:45 2025 +0200
+
+    Move foto.html to foto folder and rename to index.html
+
+[33mcommit 987de0053c06442c281af05f07b04d43e1bc9cb3[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 20:15:41 2025 +0200
+
+    Update konten terbaru
+
+[33mcommit 9c7ac52f1cd26cda3b99bec44d790d290a8d609d[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 20:10:46 2025 +0200
+
+    Update konten terbaru
+
+[33mcommit 95aee01f22c76df172cfcff4f8082ba88b7e7d51[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Mon Apr 7 20:04:25 2025 +0200
+
+    Update konten halaman
+
+[33mcommit c317af3a7eb45714823916201210312e54f4b7cd[m
+Author: tumpahantinta <132322320+tumpahantinta@users.noreply.github.com>
+Date:   Sun Apr 6 21:58:23 2025 +0200
+
+    Create CNAME
+
+[33mcommit 2a084d9e06f1b4187375c0a53879bc81f4ffea58[m
+Author: tumpahantinta <132322320+tumpahantinta@users.noreply.github.com>
+Date:   Sun Apr 6 21:58:11 2025 +0200
+
+    Delete CNAME
+
+[33mcommit 307c6c38217d0ffd39b77986734b062f2c51923c[m
+Author: tumpahantinta <132322320+tumpahantinta@users.noreply.github.com>
+Date:   Sun Apr 6 21:52:51 2025 +0200
+
+    Create CNAME
+
+[33mcommit 09fe2108cde2853582d41c5186359cff9670652e[m
+Author: tumpahantinta <132322320+tumpahantinta@users.noreply.github.com>
+Date:   Sun Apr 6 21:52:35 2025 +0200
+
+    Delete CNAME
+
+[33mcommit 26634ab108ad9533217f6df86e297737791e4628[m
+Author: tumpahantinta <132322320+tumpahantinta@users.noreply.github.com>
+Date:   Sun Apr 6 21:43:40 2025 +0200
+
+    Create CNAME
+
+[33mcommit 84ce74c8a844840e18a75bea7b62dbeddfad9cb0[m
+Author: tumpahantinta <132322320+tumpahantinta@users.noreply.github.com>
+Date:   Sun Apr 6 01:08:47 2025 +0200
+
+    Delete CNAME
+
+[33mcommit 82ed11805a0854c6bd13f49372dd7d0bacf9e747[m
+Author: tumpahantinta <132322320+tumpahantinta@users.noreply.github.com>
+Date:   Sun Apr 6 01:06:46 2025 +0200
+
+    Create CNAME
+
+[33mcommit 3f6edeb2f499a315b1d5a7178d4f377830d8c7bc[m
+Author: tumpahantinta <reyvaldi150704@gmail.com>
+Date:   Sun Apr 6 00:33:20 2025 +0200
+
+    Initial commit - versi bersih
