@@ -1,3 +1,5 @@
 127.0.0.1 - - [11/Apr/2025:19:27:50 +0200] "GET / HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
 127.0.0.1 - - [11/Apr/2025:19:27:51 +0200] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
 127.0.0.1 - - [11/Apr/2025:19:34:18 +0200] "GET /wpad.dat HTTP/1.1" 404 153 "-" "WinHttp-Autoproxy-Service/5.1"
+127.0.0.1 - - [11/Apr/2025:19:42:22 +0200] "GET /wpad.dat HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.99.0 Chrome/132.0.6834.210 Electron/34.3.2 Safari/537.36"
+127.0.0.1 - - [11/Apr/2025:19:44:18 +0200] "GET /wpad.dat HTTP/1.1" 404 153 "-" "WinHttp-Autoproxy-Service/5.1"
