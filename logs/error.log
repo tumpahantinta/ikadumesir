@@ -2,6 +2,3 @@
 2025/04/11 19:25:11 [emerg] 9108#20844: CreateDirectory() "C:\WEB IKADU MESIR/temp/client_body_temp" failed (3: The system cannot find the path specified)
 2025/04/11 19:43:58 [notice] 21160#1916: signal process started
 2025/04/11 19:47:32 [notice] 8148#18024: signal process started
-2025/04/11 19:48:48 [notice] 9328#1012: signal process started
-2025/04/11 19:50:06 [emerg] 5132#6444: invalid number of arguments in "root" directive in C:\WEB IKADU MESIR/conf/nginx.conf:15
-2025/04/11 19:52:06 [notice] 8492#5132: signal process started
