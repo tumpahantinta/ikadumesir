@@ -38,18 +38,19 @@ $(document).ready(function () {
     ],
     navContainer: "#slider-tools-2",
   });
-  $("#dokumentasi-slider").owlCarousel({
-    loop: true,
-    nav: true,
-    // mouseDrag: true
-    items: 3,
-    dots: false,
-    margin: 20,
-    navText: [
-      "<i class='fas fa-angle-left'><i>",
-      "<i class='fas fa-angle-right'><i>",
-    ],
-    navContainer: "#slider-tools-3",
+  $(document).ready(function () {
+    // Inisialisasi Owl Carousel
+    $("#dokumentasi-slider").owlCarousel({
+      loop: true,
+      nav: true,
+      items: 4, // Jumlah item yang ditampilkan
+      dots: false,
+      margin: 20,
+      navText: [
+        "<i class='fas fa-angle-left'></i>",
+        "<i class='fas fa-angle-right'></i>",
+      ],
+      navContainer: "#slider-tools-3", // Tempat tombol navigasi
+    });
   });
-  window.location.href = "/artikel"; // Arahkan tanpa ekstensi .html
 });
