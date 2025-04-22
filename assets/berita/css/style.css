@@ -298,6 +298,16 @@ li.nav-item.active a {
   color: #093422;
 }
 
+.card-title {
+  font-size: 18px;
+  min-height: 60px; /* Sesuaikan agar semua judul rata */
+  line-height: 1.4;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
 .card {
   background: white;
   border-radius: 8px;
@@ -317,9 +327,9 @@ li.nav-item.active a {
   object-fit: cover;
 }
 
-.card-body {
+/* .card-body {
   padding: 20px;
-}
+} */
 
 .card-body h3 {
   font-size: 18px;
