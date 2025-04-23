@@ -627,43 +627,45 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  align-items: stretch;
 }
 
 /* Kolom kiri dan kanan */
 #wattpad-style .story-column {
   width: 48%;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 /* Setiap item cerita */
 #wattpad-style .story-item {
   display: flex;
-  align-items: center;
   background: white;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   text-align: left;
+  height: 100%; /* Pastikan semua setara */
 }
 
 #wattpad-style .story-item:hover {
   transform: translateY(-5px);
 }
 
-/* Cover cerita */
+/* Gambar samping kiri */
 #wattpad-style .story-item img {
-  width: 120px;
-  height: 180px;
-  object-fit: cover;
+  width: 120px; /* Sesuaikan */
+  height: auto;
   border-radius: 5px;
   margin-right: 15px;
+  object-fit: cover;
 }
 
-/* Konten cerita */
+/* Konten di kanan */
 #wattpad-style .story-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 1;
 }
 
@@ -673,10 +675,15 @@ section {
   margin-bottom: 5px;
 }
 
+/* Potong teks jika terlalu panjang */
 #wattpad-style .story-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Ganti jumlah baris di sini */
+  -webkit-box-orient: vertical;
   font-size: 14px;
   color: #555;
-  margin-bottom: 8px;
 }
 
 /* Tombol Baca Sekarang */
