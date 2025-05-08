@@ -341,44 +341,61 @@ section {
   color: #fff;
 }
 
-/* css untuk slider struktur */
+/* Container utama slider */
+#struktural-slider {
+  position: relative;
+}
 
+/* Setiap item slider */
 .section-item-slider {
   height: 380px;
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   position: relative;
-  overflow: hidden; /* Tambahkan ini */
+  overflow: hidden;
 }
 
+/* Gambar pengurus */
 #struktur .foto-pengurus {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute; /* Tambahkan ini */
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
 }
 
+/* Caption di bawah gambar */
 .section-item-caption {
   position: absolute;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8); /* Bisa juga pakai transparansi */
-  color: #000;
+  background-color: rgba(255, 255, 255, 0.85);
   width: 100%;
   text-align: center;
+  padding: 15px 10px;
   font-weight: 600;
-  padding: 20px 10px 15px;
-  z-index: 10; /* Tambahkan ini supaya tetap di atas gambar */
+  z-index: 10;
 }
 
-#slider-tools-1 .owl-next,
-#slider-tools-1 .owl-prev {
+#struktur {
+  position: relative;
+}
+
+#slider-tools-1 {
   position: absolute;
-  top: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* penting supaya panah ikut tinggi slider */
+  pointer-events: none; /* biar nggak blok klik ke carousel */
+}
+
+#slider-tools-1 .owl-prev,
+#slider-tools-1 .owl-next {
+  position: absolute;
+  top: 55%;
   transform: translateY(-50%);
-  z-index: 20;
+  z-index: 99999;
   background-color: #093422;
   border: none;
   height: 35px;
@@ -388,46 +405,27 @@ section {
   outline: none;
   box-shadow: 0 0 20px #ddd;
   transition: background-color 0.3s;
+  pointer-events: auto; /* supaya panah tetap bisa diklik */
 }
 
 #slider-tools-1 .owl-prev {
-  left: -60px; /* Pindahkan ke ujung kiri */
+  left: 10px;
 }
 
 #slider-tools-1 .owl-next {
-  right: -60px; /* Posisikan di ujung kanan */
+  right: 10px;
 }
 
-#slider-tools-1 .owl-next:hover,
-#slider-tools-1 .owl-prev:hover {
-  background-color: #4c9e77; /* Warna berubah saat hover */
-  cursor: pointer;
-}
-
-#struktur .tombol-selengkapnya {
+.tombol-selengkapnya {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px; /* opsional, supaya ada jarak dari atas */
 }
 
-#struktur .btn.btn-more {
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #093422;
-  text-align: center;
+.tombol-selengkapnya .btn-more {
   display: inline-block;
-  border: 2px solid #093422;
-  border-radius: 0;
-  padding: 10px 40px;
-  transition: border-color 0.3s;
 }
 
-#struktur .btn.btn-more:hover {
-  background-color: #4c9e77;
-  color: #fff;
-}
-
-/* Container untuk gambar-gambar dalam slider */
+/* css untuk dokumentasi */
 #dokumentasi .owl-carousel .item {
   position: relative;
   display: flex;
@@ -436,6 +434,10 @@ section {
   width: 100%;
   height: 250px; /* Sesuaikan dengan ukuran gambar */
   border-radius: 10px;
+}
+
+#dokumentasi {
+  position: relative;
 }
 
 #dokumentasi .dokumentasi {
@@ -496,13 +498,21 @@ section {
   color: #fff;
 }
 
-/* Custom Navigation Buttons */
-#slider-tools-1 .owl-next,
-#slider-tools-1 .owl-prev {
+#slider-tools-3 {
   position: absolute;
-  top: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* penting! ikut tinggi parent */
+  pointer-events: none; /* supaya tidak blok interaksi di carousel */
+}
+
+#slider-tools-3 .owl-prev,
+#slider-tools-3 .owl-next {
+  position: absolute;
+  top: 35%;
   transform: translateY(-50%);
-  z-index: 20;
+  z-index: 99999;
   background-color: #093422;
   border: none;
   height: 35px;
@@ -512,19 +522,20 @@ section {
   outline: none;
   box-shadow: 0 0 20px #ddd;
   transition: background-color 0.3s;
+  pointer-events: auto; /* biar tombol tetap bisa diklik */
 }
 
-#slider-tools-1 .owl-prev {
-  left: -60px; /* Pindahkan ke ujung kiri */
+#slider-tools-3 .owl-prev {
+  left: 10px;
 }
 
-#slider-tools-1 .owl-next {
-  right: -60px; /* Posisikan di ujung kanan */
+#slider-tools-3 .owl-next {
+  right: 10px;
 }
 
-#slider-tools-1 .owl-next:hover,
-#slider-tools-1 .owl-prev:hover {
-  background-color: #4c9e77; /* Warna berubah saat hover */
+#slider-tools-3 .owl-next:hover,
+#slider-tools-3 .owl-prev:hover {
+  background-color: #4c9e77; /* Tombol saat hover */
   cursor: pointer;
 }
 
@@ -745,31 +756,212 @@ section {
   color: #4c9e77;
 }
 
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
-  .footer-grid {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-col {
-    width: 100%;
-  }
-
-  .footer-social {
-    justify-content: center;
-  }
+.copyright {
+  background-color: #093422;
+  color: white;
+  text-align: center;
+  padding: 8px 0; /* semula 15px 0 → jadi lebih tipis */
 }
 
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px 0;
-  background: #062d1a;
-  color: #fff;
-  font-size: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  height: 40px; /* Sesuaikan tinggi kotak agar tulisan lebih pas di tengah */
+.copyright p {
+  margin: 0;
+  font-size: 13px; /* semula 14px → sedikit lebih kecil */
+}
+
+/* Start HP */
+@media screen and (max-width: 768px) {
+  .top-contact {
+    display: none;
+  }
+
+  .brand {
+    flex-direction: column; /* Mengubah tata letak menjadi vertikal pada ponsel dan tablet */
+    gap: 5px; /* Mengurangi jarak antar elemen */
+  }
+
+  .brand-name {
+    writing-mode: horizontal-tb !important; /* teks jadi horizontal */
+    transform: none !important; /* hapus rotasi */
+    text-align: center;
+    display: block;
+  }
+
+  .brand-name h1,
+  .brand-name h3 {
+    display: block;
+    white-space: normal;
+  }
+
+  .brand img {
+    margin-left: 20px; /* Ubah nilainya sesuai kebutuhan */
+  }
+
+  #hero-area {
+    padding: 0; /* hilangkan padding agar gambar nempel */
+    margin: 0;
+  }
+
+  .slider-item {
+    position: relative;
+  }
+
+  .slider-item-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0; /* hilangkan jarak */
+  }
+
+  .slider-item-content {
+    padding: 8px 12px;
+  }
+
+  .slider-item-content h2 {
+    display: none;
+  }
+
+  .slider-item-content p {
+    display: none;
+  }
+
+  .slider-item-content .btn-utama {
+    display: none;
+  }
+
+  .btn-utama:hover {
+    background-color: #006837;
+  }
+  #hero-area .slider-item-content {
+    display: none;
+  }
+
+  /* Gaya umum untuk .vidio-wrapper */
+  .vidio-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Rasio aspek 16:9 */
+    overflow: hidden;
+  }
+
+  /* Gaya untuk iframe di dalam .vidio-wrapper */
+  .vidio-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  #data .section-title h2 {
+    margin-top: 0px; /* Sesuaikan nilai ini sesuai kebutuhan */
+  }
+
+  .section-item-caption h5 {
+    font-size: 12px; /* Ukuran font untuk nama */
+  }
+
+  .section-item-caption h6 {
+    font-size: 10px; /* Ukuran font untuk jabatan */
+  }
+  .section-item-caption {
+    padding: 8px; /* Sesuaikan padding untuk layar kecil */
+    width: 100%; /* Membuat kotak mengisi lebar layar */
+  }
+
+  @media (max-width: 768px) {
+    .footer-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      #footer {
+        padding-top: 30px; /* tambahkan jarak atas footer */
+      }
+
+      .footer-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 10px; /* tambahan jarak dalam grid */
+      }
+
+      .footer-col {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .footer-col:nth-child(2) {
+        margin-top: 10px; /* kasih jarak atas untuk Kontak Kami */
+      }
+    }
+
+    .footer-col {
+      width: 100%;
+      margin-bottom: 10px; /* jarak antar kolom lebih rapat */
+    }
+
+    .footer-col h2 {
+      font-size: 16px;
+      margin-bottom: 5px; /* rapatkan heading ke konten */
+    }
+
+    .footer-col p,
+    .footer-col li,
+    .footer-col a {
+      font-size: 14px;
+    }
+
+    .footer-col:first-child {
+      order: 1;
+    }
+
+    .footer-col:nth-child(2) {
+      order: 2;
+      margin-top: -50px; /* angkat Kontak Kami ke atas */
+    }
+
+    .footer-col:nth-child(3) {
+      display: none;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .brand img {
+      width: 80px;
+      margin-bottom: 5px;
+    }
+
+    .tentang {
+      margin-bottom: 5px;
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-contact li {
+      margin-bottom: 3px;
+    }
+    .section-body {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section-body-item {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+  }
 }

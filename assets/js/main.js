@@ -14,29 +14,19 @@ $(document).ready(function () {
   });
   $("#struktural-slider").owlCarousel({
     loop: true,
+    margin: 10,
     nav: true,
-    // mouseDrag: true
-    items: 3,
     dots: false,
-    margin: 20,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 },
+    },
     navText: [
-      "<i class='fas fa-angle-left'><i>",
-      "<i class='fas fa-angle-right'><i>",
+      "<i class='fas fa-angle-left'></i>",
+      "<i class='fas fa-angle-right'></i>",
     ],
     navContainer: "#slider-tools-1",
-  });
-  $("#alumni-slider").owlCarousel({
-    loop: true,
-    nav: true,
-    // mouseDrag: true
-    items: 2,
-    dots: false,
-    margin: 20,
-    navText: [
-      "<i class='fas fa-angle-left'><i>",
-      "<i class='fas fa-angle-right'><i>",
-    ],
-    navContainer: "#slider-tools-2",
   });
   $(document).ready(function () {
     // Inisialisasi Owl Carousel
@@ -46,6 +36,11 @@ $(document).ready(function () {
       items: 4, // Jumlah item yang ditampilkan
       dots: false,
       margin: 20,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 3 },
+      },
       navText: [
         "<i class='fas fa-angle-left'></i>",
         "<i class='fas fa-angle-right'></i>",

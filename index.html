@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <!-- style css custom -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- FontAwesome -->
   </head>
 
   <body>
@@ -41,8 +42,8 @@
               </li>
               <li>
                 <a href="#">
-                  <i class="fas fa-bullhorn"></i>Disarankan membuka dengan
-                  laptop/tablet
+                  <i class="fas fa-bullhorn"></i>Selamat datang di website IKADU
+                  Mesir
                 </a>
               </li>
             </ul>
@@ -415,7 +416,7 @@
           <!-- Kolom 1 -->
           <div class="story-column">
             <div class="story-item">
-              <img src="assets/img/artikel 1.jpg" alt="Cover 1" />
+              <img src="assets/img/artikel1.png" alt="Cover 1" />
               <div class="story-content">
                 <h3>
                   ANALISIS SYAKIB ARSLAN: MENGAPA UMAT ISLAM MUNDUR DAN BANGSA
@@ -468,7 +469,7 @@
           <!-- Kolom 3 -->
           <div class="story-column">
             <div class="story-item">
-              <img src="assets/img/Sastra1.png" alt="Cover 1" />
+              <img src="assets/img/Sastra1.jpeg" alt="Cover 1" />
               <div class="story-content">
                 <h3>
                   KETIKA SORAK MENGALAHKAN SUNYI; SEBUAH TANYA UNTUK KITA,
@@ -519,6 +520,12 @@
             background-color: #fff;
             padding: 80px 0;
             text-align: center;
+          }
+
+          .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px; /* Tambahkan jarak dari sisi kiri dan kanan */
           }
 
           .section-body {
@@ -658,6 +665,7 @@
         </div>
         <div class="section-body">
           <div id="slider-tools-1"></div>
+          <!-- Pastikan elemen ini ada di halaman -->
           <div class="owl-carousel" id="struktural-slider">
             <!-- awal box -->
             <div class="section-item-slider">
@@ -711,6 +719,7 @@
     <!-- Section Dokumentasi -->
     <section id="dokumentasi">
       <!-- Slider Dokumentasi -->
+      <div id="slider-tools-3"></div>
       <div class="owl-carousel" id="dokumentasi-slider">
         <!-- Gambar 1 -->
         <div class="item">
@@ -783,41 +792,18 @@
     <footer id="footer">
       <div class="container">
         <div class="footer-grid">
-          <!-- Kolom 1: Brand & Tentang -->
-          <div class="footer-col">
-            <div class="brand">
-              <img src="assets/img/logo.png" alt="IKADU MESIR Logo" />
-              <h1>IKADU MESIR</h1>
-            </div>
-            <p class="tentang">Ikatan Keluarga Daarul Ukhuwwah Mesir.</p>
-            <ul class="footer-social">
-              <li>
-                <a href="https://www.facebook.com/ikadumesir" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/ikadumesir" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://www.youtube.com/@ikadumesir4731"
-                  target="_blank"
-                >
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://wa.me/6281231293736" target="_blank">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </li>
-            </ul>
+          <!-- Logo + Judul -->
+          <div class="footer-col footer-top">
+            <img
+              src="assets/img/logo.png"
+              alt="IKADU MESIR Logo"
+              class="footer-logo"
+            />
+            <h1 class="footer-title">IKADU MESIR</h1>
+            <p class="footer-subtitle">Ikatan Keluarga Daarul Ukhuwwah Mesir</p>
           </div>
 
-          <!-- Kolom 2: Kontak -->
+          <!-- Kontak -->
           <div class="footer-col">
             <h2>Kontak Kami</h2>
             <p class="alamat">
@@ -829,7 +815,6 @@
                 flat 3, Dist 9, Nasr City, Cairo
               </a>
             </p>
-
             <ul class="footer-contact">
               <li>
                 <i class="fas fa-phone"></i>
@@ -846,8 +831,8 @@
             </ul>
           </div>
 
-          <!-- Kolom 3: Navigasi -->
-          <div class="footer-col">
+          <!-- Navigasi (disembunyikan di HP) -->
+          <div class="footer-col footer-col-nav">
             <h2>Navigasi</h2>
             <ul class="footer-nav">
               <li><a href="#sambutan">Profil</a></li>

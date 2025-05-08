@@ -220,7 +220,7 @@ li.nav-item.active a {
 
 .footer-contact i {
   margin-right: 8px;
-  color: #4c9e77;
+  color: #fff;
   font-size: 16px;
 }
 
@@ -254,22 +254,6 @@ li.nav-item.active a {
 
 .footer-nav a:hover {
   color: #4c9e77;
-}
-
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
-  .footer-grid {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-col {
-    width: 100%;
-  }
-
-  .footer-social {
-    justify-content: center;
-  }
 }
 
 .copyright {
@@ -356,4 +340,146 @@ li.nav-item.active a {
 
 .btn-utama:hover {
   background-color: #4c9e77;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    padding-top: 30px; /* tambahkan jarak atas footer */
+  }
+
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px; /* tambahan jarak dalam grid */
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-col:nth-child(2) {
+    margin-top: 10px; /* kasih jarak atas untuk Kontak Kami */
+  }
+  .footer-col {
+    width: 100%;
+    margin-bottom: 10px; /* jarak antar kolom lebih rapat */
+  }
+
+  .footer-col h2 {
+    font-size: 16px;
+    margin-bottom: 5px; /* rapatkan heading ke konten */
+  }
+
+  .footer-col p,
+  .footer-col li,
+  .footer-col a {
+    font-size: 14px;
+  }
+
+  .footer-col:first-child {
+    order: 1;
+  }
+
+  .footer-col:nth-child(2) {
+    order: 2;
+    margin-top: -50px; /* angkat Kontak Kami ke atas */
+  }
+
+  .footer-col:nth-child(3) {
+    display: none;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .brand img {
+    width: 80px;
+    margin-bottom: 5px;
+  }
+
+  .tentang {
+    margin-bottom: 5px;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contact li {
+    margin-bottom: 3px;
+  }
+
+  .top-contact {
+    display: none;
+  }
+
+  .brand {
+    flex-direction: column; /* Mengubah tata letak menjadi vertikal pada ponsel dan tablet */
+    gap: 5px; /* Mengurangi jarak antar elemen */
+  }
+
+  .brand-name {
+    writing-mode: horizontal-tb !important; /* teks jadi horizontal */
+    transform: none !important; /* hapus rotasi */
+    text-align: center;
+    display: block;
+  }
+
+  .brand-name h1,
+  .brand-name h3 {
+    display: block;
+    white-space: normal;
+  }
+
+  .brand img {
+    margin-left: 20px; /* Ubah nilainya sesuai kebutuhan */
+  }
+
+  #hero-area {
+    padding: 0; /* hilangkan padding agar gambar nempel */
+    margin: 0;
+  }
+
+  .slider-item {
+    position: relative;
+  }
+
+  .slider-item-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0; /* hilangkan jarak */
+  }
+
+  .slider-item-content {
+    padding: 8px 12px;
+  }
+
+  .slider-item-content h2 {
+    display: none;
+  }
+
+  .slider-item-content p {
+    display: none;
+  }
+
+  .slider-item-content .btn-utama {
+    display: none;
+  }
+
+  .btn-utama:hover {
+    background-color: #006837;
+  }
+  #hero-area .slider-item-content {
+    display: none;
+  }
 }
