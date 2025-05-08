@@ -464,4 +464,13 @@ li.nav-item.active a {
   #hero-area .slider-item-content {
     display: none;
   }
+  h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  p.meta {
+    font-size: 12px;
+    line-height: 1.5;
+  }
 }
