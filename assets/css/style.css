@@ -24,6 +24,20 @@ a:hover {
   padding: 0;
 }
 
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .top-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; /* Bisa lebih kecil agar muat di layar tablet */
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Tambahan opsional jika tidak cukup ruang */
+  }
+
+  .top-contact li {
+    white-space: nowrap; /* Mencegah teks turun ke bawah */
+  }
+}
+
 #topbar li {
   display: inline-block;
 }
