@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "vscode-pets.petSize": "small",
   "vscode-pets.theme": "forest",
@@ -5,3 +6,12 @@
   "vscode-pets.position": "explorer",
   "vscode-pets.disableEffects": true
 }
+=======
+{
+  "vscode-pets.petSize": "medium",
+  "vscode-pets.theme": "forest",
+  "vscode-pets.throwBallWithMouse": true,
+  "vscode-pets.position": "explorer",
+  "vscode-pets.disableEffects": true
+}
+>>>>>>> f05e1139164f58aeb5ea9601a7b5fb4b1921c4b5
