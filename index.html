@@ -20,26 +20,45 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Google AdSense -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5061230175072782"
-      crossorigin="anonymous"
-    ></script>
-    <!-- HeaderTop -->
-    <ins
-      class="adsbygoogle"
-      style="display: block"
-      data-ad-client="ca-pub-5061230175072782"
-      data-ad-slot="9200085595"
-      data-ad-format="auto"
-      data-full-width-responsive="true"
-    ></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
   </head>
 
   <body>
+    <!-- popup iklan -->
+    <div class="popup">
+      <div class="popup-content">
+        <img class="popup-close" src="assets/img/Close.png" alt="close" />
+        <img
+          class="popup-image"
+          src="assets/img/ikadumesir.png"
+          alt="popup iklan"
+        />
+        <img class="popup-tulisan" src="assets/img/tulisan.png" alt="tulisan" />
+      </div>
+    </div>
+
+    <script>
+      var closeBtn = document.querySelector(".popup-close");
+      var tulisan = document.querySelector(".popup-tulisan");
+      var popup = document.querySelector(".popup");
+
+      setTimeout(function () {
+        popup.classList.add("popup--show"); // bisa tetap untuk class tambahan
+      }, 2000);
+
+      closeBtn.addEventListener("click", function () {
+        popup.classList.remove("popup--show");
+        popup.classList.add("popup--close");
+      });
+
+      tulisan.addEventListener("click", function () {
+        popup.classList.remove("popup--show");
+        popup.classList.add("popup--close");
+        alert("Ahlan Wa Sahlan di IKADU Mesir");
+      });
+    </script>
+
+    <!-- akhir popup iklan -->
+
     <div id="topbar">
       <div class="container">
         <div class="row">
